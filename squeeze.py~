@@ -1,0 +1,15 @@
+def squeeze(s):
+	lis  = []
+	j = 0
+	for i in s:	
+		lis.append(i)	
+	for i in range(len(lis)-1):
+		if lis[i] == lis[i+1]:
+			lis[i] = []
+		else:
+			j += 1
+	for i in lis:
+		if i:
+			print i,
+squeeze("abbdd")
+

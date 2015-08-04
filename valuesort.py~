@@ -1,0 +1,26 @@
+#valuesort
+
+x = {'a':2,'s':6,'c':3}
+y = []
+for key,value in x.items():
+	y.append(key)
+
+
+print y
+
+l = len(y)
+
+for i in range(l):
+	for j in range(i+1,l):
+		if y[i] > y[j]:
+			temp = y[i]
+			y[i] = y[j]
+			y[j] = temp
+print"*"*10
+print y
+
+for i in y:
+	for key,value in x.items():
+		if i == key:
+			print value
+	

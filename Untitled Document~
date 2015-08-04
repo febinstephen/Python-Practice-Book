@@ -1,0 +1,9 @@
+import sys
+print "Enter file to open"
+filename = sys.argv(1)
+print "length of each line"
+n = int(sys.argv(2))
+f = open('filename','r')
+
+
+

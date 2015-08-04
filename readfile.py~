@@ -1,0 +1,12 @@
+f = open('foo.txt')
+print f.readline()
+
+
+#count characters
+def charcount(filename):
+	return len(open(filename).read())
+
+
+print "No of Characters",charcount('foo.txt')
+
+

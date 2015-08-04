@@ -1,0 +1,21 @@
+f = open('foo.txt','r')
+#print f.readlines()
+lines = []
+check = []
+pattern = "febin"
+#length = len(f.readlines())
+#print length
+lines = f.readlines()
+print lines
+for i in range(10):
+	check = lines[i].split(' ')
+	print check
+	for j in check:
+		print "inside j block",j
+		if j == pattern:
+			print f.readline()
+	check[:] = []
+
+print f.readline()
+
+

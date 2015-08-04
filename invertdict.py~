@@ -1,0 +1,14 @@
+#invertdict
+
+x ={'a':1,'b':2,'c':3}
+
+y ={}
+
+for key,value in x.items():
+	print key,value
+	y[value] = y.get(value,key)
+
+print"*"*10
+
+for key,value in y.items():
+	print key,value

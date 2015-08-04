@@ -1,0 +1,4 @@
+from itertools import permutations
+a = "abc"
+for i in range(len(a)):
+	for i in permutations(a):

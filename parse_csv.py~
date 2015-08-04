@@ -1,0 +1,7 @@
+import re
+f = open('foo.txt','r')
+p = open('foo.txt','r')
+size = len(f.readlines())
+output  = [p.readline().split(',') for i in range(size)]
+
+print output

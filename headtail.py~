@@ -1,0 +1,12 @@
+f = open('foo.txt','r')
+b = []
+b = f.readlines()
+length = len(f.readlines())
+head = 10
+tail = 10
+for i in range(head):
+	print b[i],
+print"*"*10
+for j in range(tail):
+	print b[length-1],
+	length -= 1

@@ -1,0 +1,10 @@
+#anagrams in a list
+
+a = ['eat','tea','ate','cat','tac']
+
+size = len(a)
+
+for i in a:
+	for c in i:
+		print c,	
+

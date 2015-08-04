@@ -1,0 +1,4 @@
+from intertools import permutations
+perm = [''.join(p) for p in permutations('abc')]
+
+print perm

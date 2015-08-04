@@ -1,0 +1,28 @@
+def is_anagram(a, b):
+	"""Return True if the two strings 'a' and
+ 	    'b' are anagrams.
+  
+	    For example, is_anagram("rat", "tar") returns True
+            because both 'rat' and 'tar' are anagrams (ie, combination
+            of the same alphabets)."""
+	from itertools import permutations
+	i = 0
+	count = 0
+	perm = []
+	while i < len(a):
+		perm = [''.join(p) for p in permutations(a)]
+		i = i+1
+	#print perm
+	for i in perm: 
+		if i == b:
+			return True
+		else:
+			count += 1			 
+print is_anagram("rat","ta")    
+
+
+#if b in perm:
+		#	return True
+		#else:
+		#	return False
+		

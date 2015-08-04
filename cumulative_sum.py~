@@ -1,0 +1,16 @@
+a = [1,2,3]
+def cum_sum(a):
+	b = []#list 'b' to store cumulative sum of list 'a'
+	n = len(a)-1
+	#print n
+	b.append(a[0]) #appends the zeroeth element to b
+	s = a[0]
+	#print s
+	for i in range(n):
+		s = s+a[i+1]
+		b.append(s)
+	print b
+cum_sum(a)
+
+	
+	

@@ -1,0 +1,8 @@
+#def tuples_dict(t):
+lis = [('abc', 10), ('def', 20),('f',7)]
+d = {}
+for i in range(0,len(lis)-1):
+	for j in range(0,i+1):
+		d[lis[i][j]] = d.get(lis[i][i],lis[i][j+1])
+		#d[lis[i][j]].append(lis[i][j+1])
+print d
