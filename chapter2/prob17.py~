@@ -1,4 +1,0 @@
-f = open("foo.txt",'r')
-for i in reversed(f.readlines()):
-	print i
-

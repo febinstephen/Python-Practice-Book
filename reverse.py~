@@ -1,7 +1,0 @@
-a = [3,4,5]
-for i in reversed(a):
-	print i,
-
-b = list(reversed(a))
-
-print b

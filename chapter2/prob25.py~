@@ -1,7 +1,0 @@
-#map function
-def square(x):
-	return x*x
-maplist = []
-for i in a:
-	maplist.append(square(i))
-print maplist 
