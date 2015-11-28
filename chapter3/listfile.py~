@@ -1,0 +1,5 @@
+from os import listdir
+#from os.path import 
+
+list = listdir(../../Desktop)
+print list

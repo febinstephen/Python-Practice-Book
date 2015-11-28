@@ -1,0 +1,6 @@
+import socket
+from urllib import urlopen
+url = "http://httpbin.org/get"
+#page = urlopen(url).read()
+#print page
+print "IP=%s"%(socket.gethostbyname(url))
